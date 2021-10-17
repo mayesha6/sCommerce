@@ -1,0 +1,161 @@
+
+@media only screen and (min-width: 575px) {
+  /*mainHeader*/
+  .mainHeader .headerLogoCol {
+    width: 250px;
+  }
+  .mainHeader .headerLogo  {
+    font-size: 30px;
+}
+  /*categorySection*/
+.categorySection .categoryWrapper, .popularProductSection .popularProductContent{
+  grid-gap:30px;
+  grid-template-columns: 1fr 1fr;
+}
+.singleCategoryImg{
+  min-height:250px;
+}
+/*newCategory*/
+.newCategorySection .newCategoryWrapper{
+  grid-row-gap:50px;
+  grid-column-gap:50px;
+  grid-template-columns:repeat(2,1fr);
+}
+/*arrival section*/
+.arrivalSection .arrivalWrapper{
+  grid-template-columns: repeat(2,1fr);
+  grid-row-gap:50px;
+  grid-column-gap:30px;
+}
+/*footer section*/
+.explore {
+  width: 50%;
+}
+}
+@media only screen and (min-width: 768px) {
+    .container{
+      max-width:1490px;
+      padding:0 25px;
+    }
+  /*bannerSection*/
+  .bannerSection{
+    height:300px;
+  }
+  /*categorySection*/
+  .categorySection .categoryCommonTitle h2{
+    font-size:25px;
+}
+.categorySection .categoryWrapper, .popularProductSection .popularProductContent{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/*footer section*/
+.explore {
+  width: 25%;
+}
+}
+  @media(min-width:992px){
+    /*sectionPadding*/
+    .sectionPadding{
+      padding:50px 0px;
+  }
+    /* topHeader */
+    .topHeader{
+      display: flex;
+  }
+  /*mainHeader*/
+  .mainHeader .toggleIconWrap{
+    display: none;
+}
+.mainHeader .headerLogoCol {
+  width: 220px;
+}
+  .mainHeader .headerRightCol {
+    width: calc(100% - 220px);
+    flex-direction: row;
+    margin-top:0px;
+ }
+ .mainHeader .searchCol{
+  max-width:590px;
+  width:100%;
+}
+ .mainHeader .headerCartCol {
+  order:2;
+}
+/*mainNav*/
+.mainNav{
+  display:block;
+}
+/*bannerSection*/
+.bannerSection{
+  margin-bottom:30px;
+}
+  /*categorySection*/
+.categorySection .categoryWrapper, .popularProductSection .popularProductContent{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*newCategory*/
+.newCategorySection .newCategoryWrapper{
+  grid-row-gap:0px;
+  grid-column-gap:15px;
+  grid-template-columns:repeat(3,1fr);
+}
+/*arrival section*/
+.arrivalSection .arrivalWrapper{
+  grid-template-columns: repeat(3,1fr);
+}
+/*running shoes section and styleroom*/
+.runningShoesInner, .styleRoomContent{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.runningShoesDescription, .styleRoomDescription {
+  text-align: left;
+}
+.RunningShoesBanner{
+  width: calc(100% - 330px);
+  margin-bottom:0;
+  order:1;
+}
+.styleRoomImg {
+  width: calc(100% - 480px);
+  margin-bottom:0;
+}
+/*footwear section*/
+.footwearFallContent {
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+}
+.footwearFallBanner {
+  width: 340px;
+  margin-bottom: 0px;
+}
+.footwearFallProduct {
+  width: calc(100% - 370px);
+}
+}
+  @media(min-width:1200px){
+    /*sectionPadding*/
+    .sectionPadding{
+      padding:60px 0px;
+  }
+  /*bannerSection*/
+.bannerSection{
+  height:500px;
+  margin-bottom:40px;
+}
+ /*categorySection*/
+.categorySection .categoryWrapper{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+/*arrival section*/
+.arrivalSection .arrivalWrapper{
+  grid-template-columns: repeat(4,1fr);
+  grid-row-gap:0px;
+}
+/*popular product section*/
+.popularProductSection .popularProductContent{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+}
